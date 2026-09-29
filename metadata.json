@@ -1,0 +1,6 @@
+{
+  "name": "Powerplex Fitness - Seawoods, Navi Mumbai",
+  "description": "Powerplex Fitness in Seawoods, Nerul, Navi Mumbai. Premium strength training, cardio, personal training, and functional fitness. Mon–Sat 6 AM–11 PM, Sun 9 AM–2 PM.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

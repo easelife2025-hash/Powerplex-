@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+    --font-heading: var(--font-display), Impact, sans-serif;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display), Impact, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Diagonal industrial caution hazard lines pattern inspired by the gym interior */
+.bg-hazard-stripes {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 229, 0, 0.12),
+    rgba(255, 229, 0, 0.12) 12px,
+    transparent 12px,
+    transparent 24px
+  );
+}
+
+.bg-hazard-stripes-accent {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #FFE500,
+    #FFE500 14px,
+    #000000 14px,
+    #000000 28px
+  );
+}
+
+/* Subtle carbon fiber texture */
+.bg-carbon-texture {
+  background-color: #0b0c10;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Glow effects */
+.glow-yellow {
+  box-shadow: 0 0 25px rgba(255, 229, 0, 0.35);
+}
+
+.glow-yellow-sm {
+  box-shadow: 0 0 12px rgba(255, 229, 0, 0.25);
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(255, 229, 0, 0.5);
+}
+
+/* Moving lines animations */
+@keyframes moveStripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 39.6px 0;
+  }
+}
+
+.animate-moving-stripes {
+  animation: moveStripes 3s linear infinite;
+}
+
+.animate-moving-stripes-slow {
+  animation: moveStripes 6s linear infinite;
+}
+
+@keyframes moveLineHorizontal {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.animate-moving-line {
+  animation: moveLineHorizontal 5s ease-in-out infinite;
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0f14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2e39;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffe500;
+}
+
