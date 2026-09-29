@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Dumbbell, Phone, Navigation, Clock, MapPin, Star, ShieldCheck, Heart } from 'lucide-react';
+import { Dumbbell, Phone, Navigation, Clock, MapPin, Star, ShieldCheck } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa6';
 import { GYM_INFO } from '@/lib/gymData';
 
@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-neutral-900">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
           
           {/* Brand Column */}
           <div className="lg:col-span-4 space-y-4">
@@ -134,14 +134,6 @@ export default function Footer() {
             </div>
           </div>
 
-        </div>
-
-        {/* Bottom Micro Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-neutral-500">
-          <p>© {new Date().getFullYear()} Powerplex Fitness. All rights reserved. Seawoods West, Navi Mumbai.</p>
-          <p className="flex items-center gap-1">
-            <span>Engineered with passion for high performance</span>
-          </p>
         </div>
 
       </div>
